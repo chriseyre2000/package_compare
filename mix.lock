@@ -1,0 +1,8 @@
+%{
+  "bolt_sips": {:hex, :bolt_sips, "0.4.12", "aae226f32d9267b8a0391bfa3ac063c2400849d236c9d2d9de44db119b5131c4", [:mix], [{:boltex, "~> 0.4.0", [hex: :boltex, repo: "hexpm", optional: false]}, {:fuzzyurl, "~> 0.9.1", [hex: :fuzzyurl, repo: "hexpm", optional: false]}, {:poolboy, "~> 1.5.1", [hex: :poolboy, repo: "hexpm", optional: false]}, {:retry, "~> 0.8.1", [hex: :retry, repo: "hexpm", optional: false]}], "hexpm"},
+  "boltex": {:hex, :boltex, "0.4.1", "49de302ebb59d92419532f1953fbfea0acc312503306be57b493b56d6b7a3fb7", [:hex], [], "hexpm"},
+  "fuzzyurl": {:hex, :fuzzyurl, "0.9.1", "81ed7a5f6b42706b65e3948958e6f584d38e3749a5445d5a26d5f80ac1121033", [:mix], [], "hexpm"},
+  "poison": {:hex, :poison, "3.1.0", "d9eb636610e096f86f25d9a46f35a9facac35609a7591b3be3326e99a0484665", [:mix], [], "hexpm"},
+  "poolboy": {:hex, :poolboy, "1.5.2", "392b007a1693a64540cead79830443abf5762f5d30cf50bc95cb2c1aaafa006b", [:rebar3], [], "hexpm"},
+  "retry": {:hex, :retry, "0.8.2", "7b57bd5e1e7efeca04dd740cabdc3930c472cfa7e0186949de180c64417e9c35", [:mix], [], "hexpm"},
+}
