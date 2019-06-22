@@ -3,6 +3,11 @@
 This is a utility that will parse and load a package.json file into a neo4j database.
 The intent is to load many projects into the database and then perform analysis on them.
 
+## Usage
+Once you have run `mix escript.build` then you can use the following:
+
+./package_compare path-to-the/package.json localhost neo4j_username neo4j_password
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
