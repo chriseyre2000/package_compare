@@ -22,3 +22,5 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 package_compare-*.tar
 
+#Ignore the binary
+package_compare
