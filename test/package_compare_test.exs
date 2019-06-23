@@ -60,7 +60,7 @@ defmodule PackageCompareTest do
 
     commands = PackageCompare.add_package(result)
 
-    assert commands.nodes |> Enum.count() == 32
+    assert commands.nodes |> Enum.count() == 30
     assert commands.relationships |> Enum.count() == 29
   end
 end
