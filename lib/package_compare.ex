@@ -50,7 +50,7 @@ defmodule PackageCompare do
           query: """
                   MATCH (n:project { name: {name} }) 
                   MATCH (m:project_version {name: {name}, version: {version}})
-                  CREATE  (n)-[:has_version]-> (m) 
+                  MERGE  (n)-[:has_version]-> (m) 
                   """,
           params: %{name: map.name, version: map.version}
         }
@@ -80,7 +80,7 @@ defmodule PackageCompare do
         query: """
                MATCH (n:module { name: {name} }) 
                MATCH (m:module_version {name: {name}, version: {version}})
-               CREATE (n) -[:has_version]-> (m) 
+               MERGE (n) -[:has_version]-> (m) 
                """,
         params: %{name: module, version: version}
       }
@@ -91,7 +91,7 @@ defmodule PackageCompare do
         query: """
                MATCH (n:project_version { name: {project}, version: {project_version}})
                MATCH (m:module_version {name: {name}, version: {version}})
-               CREATE (n) -[:uses_dev_version]-> (m)
+               MERGE (n) -[:uses_dev_version]-> (m)
                """,
         params: %{project: map.name, project_version: map.version, name: module, version: version}
       }
@@ -116,7 +116,7 @@ defmodule PackageCompare do
         query: """
                MATCH (n:module { name: {name} })
                MATCH (m:module_version {name: {name}, version: {version}})
-               CREATE (n) -[:has_version]-> (m)
+               MERGE (n) -[:has_version]-> (m)
                """,
         params: %{name: module, version: version}
       }
@@ -127,7 +127,7 @@ defmodule PackageCompare do
         query: """
                MATCH (n:project_version { name: {project}, version: {project_version} })
                MATCH (m:module_version {name: {name}, version: {version}})
-               CREATE (n) -[:uses_version]-> (m)
+               MERGE (n) -[:uses_version]-> (m)
                """,
         params: %{project: map.name, project_version: map.version, name: module, version: version}
       }
