@@ -11,7 +11,7 @@ brew install elixir
 ```
 
 ## Usage
-Once you have run ` MIX_ENV=prod mix escript.build` then you can use the following:
+Once you have run `mix escript.build` then you can use the following:
 
 ```
 ./package_compare path-to-the/package.json localhost neo4j_username neo4j_password
