@@ -28,8 +28,6 @@ defmodule PackageCompare.MixProject do
     [
       {:poison, "~> 4.0"},
       {:bolt_sips, "~> 0.4.12"}
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
 

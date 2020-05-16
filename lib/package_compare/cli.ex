@@ -30,6 +30,8 @@ defmodule PackageCompare.Cli do
   defp process(:help) do
     IO.puts """
     usage: package_compare filename database username password
+
+    This loads a given node_modules file into a neo4j database
     
     """
     System.halt(0)

@@ -10,9 +10,7 @@ defmodule PackageCompare.Neo4jWrite do
   def write_to_neo4j(data) do
     conn = Bolt.Sips.begin(Bolt.Sips.conn)
     
-    #Nodes need to be reversed as prefixed by delete statements
-    entry_data = Enum.reverse(data.nodes)
-    Enum.each(entry_data, fn(item) -> 
+    Enum.each(data.nodes, fn(item) ->
        Bolt.Sips.query(conn, item.query, item.params)  
     end )
 
