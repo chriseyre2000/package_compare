@@ -24,3 +24,5 @@ package_compare-*.tar
 
 #Ignore the binary
 package_compare
+
+.idea/
