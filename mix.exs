@@ -17,7 +17,7 @@ defmodule PackageCompare.MixProject do
     [
       applications: [
         :poison,
-        :bolt_sips 
+        :bolt_sips
       ],
       extra_applications: [:logger]
     ]
@@ -26,8 +26,8 @@ defmodule PackageCompare.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:poison, "~> 4.0"},
-      {:bolt_sips, "~> 0.4.12"}
+      {:poison, "~> 3.1"},
+      {:bolt_sips, "~> 2.0.9"}
     ]
   end
 
