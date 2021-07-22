@@ -26,7 +26,7 @@ defmodule PackageCompare.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:poison, "~> 4.0"},
+      {:poison, "~> 5.0"},
       {:bolt_sips, "~> 0.4.12"}
     ]
   end
